@@ -9,7 +9,6 @@ var stand1,stand2;
 var polygon;
 var slingShot;
 var polygon_img;
-var score = 0;
 var block1;
 var block2;
 var block3;
@@ -35,7 +34,7 @@ var blocks6;
 var blocks7;
 var blocks8;
 var blocks9;
-
+var score1 = 0 ;
 
 
 
@@ -104,7 +103,7 @@ function draw() {
   textSize(10);
   text("Press Space to get a second Chance to Play!!",650 ,350);
   textSize(15);
-  text("SCORE : "+score,750,40);
+  text("SCORE : "+ score1,750,40);
   ground.display();
   stand1.display();
   stand2.display();
@@ -189,11 +188,3 @@ function keyPressed(){
   }
 }
 
-function score() {
-
-  if (this.visibility<0 && this.visibilty> -105){
-
-    score=score+100;
-    
-  }
-}
